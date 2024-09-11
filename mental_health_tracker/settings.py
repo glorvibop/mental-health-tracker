@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-+bd@#7ft(hm&e6=$-g$16cw9o-^0v4j!j*nc0f%ob-#t(oz2)%
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["localhost", "127.0.0.1", "shaine-glorvina-bronxsimulator2.pbp.cs.ui.ac.id"]
+ALLOWED_HOSTS = ["localhost", "127.0.0.1", "shaine-glorvina-trackergokil.pbp.cs.ui.ac.id"]
 
 # Application definition
 
@@ -54,7 +54,7 @@ ROOT_URLCONF = 'mental_health_tracker.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
