@@ -11,6 +11,8 @@
 <h5>Class:</h5>
 <p>{{ class }}</p>
 
+<h5>Sesi terakhir login: {{ last_login }}</h5>
+
 {% if not mood_entries %}
 <p>Belum ada data mood pada mental health tracker.</p>
 {% else %}
@@ -40,4 +42,9 @@
 <a href="{% url 'main:create_mood_entry' %}">
   <button>Add New Mood Entry</button>
 </a>
+
+<a href="{% url 'main:logout' %}">
+  <button>Logout</button>
+</a>
+
 {% endblock content %}
